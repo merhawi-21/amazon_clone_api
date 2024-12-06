@@ -1,0 +1,49 @@
+
+/* Category card css starts */
+.category_card{
+  height: 330px;
+  width: 330px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  
+}
+
+.category_card img{
+  width: 100%;
+  object-fit: contain;
+  max-height: 250px;
+  max-width: 340px;
+  padding: 0 10px;
+}
+
+.category_card a{
+  text-decoration: none;
+  color: rgb(35,35,35);
+}
+
+.category_card h2, .category_card p{
+  padding: 5px;
+  margin-left: 15px;
+}
+
+.category_card p{
+  /* font-size: 12px; */
+  font-weight: bold;
+  color: rgb(9,132,209);
+}
+/* Category card css ends */
+
+
+ /* category css starts */
+.category_container{
+  position: relative;
+  margin-top: -10%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px,1fr));
+  max-width: 1600px;
+  place-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  gap: 20px;
+  
+}

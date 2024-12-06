@@ -1,0 +1,29 @@
+
+/* Container for the entire carousel */
+.banner_slide {
+  position: relative; /* For positioning gradient overlay */
+  width: 100%;
+  max-width: 100%; /* Ensure it stretches across full width */
+}
+
+/* Each carousel item, including image and gradient overlay */
+.carousel_item {
+  position: relative; /* This is required for absolute positioning of overlay */
+}
+
+.carousel_item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensure the image covers the space */
+}
+
+/* Gradient overlay effect at the bottom of each image */
+.gradient_overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%; /* Adjust based on how much of the bottom should have the gradient */
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)); /* Light gradient */
+  pointer-events: none; /* Ensures that the overlay does not block any user interaction */
+}
